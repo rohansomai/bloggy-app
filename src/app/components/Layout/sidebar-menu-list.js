@@ -1,6 +1,6 @@
-import { InputOutlined, PagesOutlined } from '@mui/icons-material';
+import { LabelOutlined, ArticleOutlined } from '@mui/icons-material';
 
 export const sidebarMenuList = [
-  { id: 1, title: 'Posts', icon: <PagesOutlined />, path: '/posts' },
-  { id: 2, title: 'Labels', icon: <InputOutlined />, path: '/labels' },
+  { id: 1, title: 'Posts', icon: <ArticleOutlined />, path: '/posts' },
+  { id: 2, title: 'Labels', icon: <LabelOutlined />, path: '/labels' },
 ];

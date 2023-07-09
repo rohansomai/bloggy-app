@@ -1,11 +1,12 @@
-import Layout from '@/app/components/Layout';
+import Head from 'next/head';
 
 export default function App() {
   return (
     <>
-      <Layout>
-        <div>hey</div>
-      </Layout>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
+      <div>hey</div>
     </>
   );
 }
