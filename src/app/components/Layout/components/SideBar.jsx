@@ -1,6 +1,6 @@
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { ChevronLeft } from '@mui/icons-material';
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import { sidebarMenuList } from '@/app/components/Layout/sidebar-menu-list';
@@ -28,7 +28,7 @@ const SideBar = ({ open, handleDrawerClose }) => {
       <DrawerHeader>
         <Logo />
         <IconButton onClick={handleDrawerClose}>
-          <ChevronLeftIcon />
+          <ChevronLeft />
         </IconButton>
       </DrawerHeader>
       <Divider />

@@ -1,7 +1,10 @@
+'use client';
+
 import './globals.css';
 import { Roboto } from 'next/font/google';
 import Layout from '@/app/components/Layout';
-
+import { ThemeProvider } from '@mui/material';
+import { theme } from '@/app/components/Layout/components/theme';
 const roboto = Roboto({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
@@ -13,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Layout>{children}</Layout>
+        <ThemeProvider theme={theme}>
+          <Layout>{children}</Layout>
+        </ThemeProvider>
       </body>
     </html>
   );
