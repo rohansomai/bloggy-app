@@ -8,7 +8,7 @@ import SideBarItem from '@/app/components/Layout/components/SideBarItem';
 import Drawer from '@mui/material/Drawer';
 import { drawerWidth } from '@/app/components/Layout';
 import { DrawerHeader } from '@/app/components/Layout/styled-components/DrawerHeader';
-import Logo from '@/app/components/Layout/components/Logo';
+import Logo from '@/app/components/shared/Logo';
 
 const SideBar = ({ open, handleDrawerClose }) => {
   return (

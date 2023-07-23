@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Avatar, Menu, MenuItem, Tooltip, Typography } from '@mui/material';
+import { Avatar, Menu, MenuItem, Typography } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
+import BloggyTooltip from '@/app/components/shared/BloggyTooltip';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -17,13 +18,13 @@ const ProfileMenu = () => {
 
   return (
     <>
-      <Tooltip title="Rohan Somai is currently logged in">
+      <BloggyTooltip title="Rohan Somai is currently logged in">
         <IconButton onClick={handleOpenUserMenu} className={'p-0'}>
           <Avatar alt="Rohan Somai" src="/static/images/avatar/2.jpg">
             RS
           </Avatar>
         </IconButton>
-      </Tooltip>
+      </BloggyTooltip>
       <Menu
         className={'mt-11'}
         id="bloggy-profile-menu"

@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar } from '@/app/components/Layout/styled-components/AppBar';
 import { SearchOutlined } from '@mui/icons-material';
 import styles from '@/app/styles/layout.module.scss';
-import BloggyTextField from '@/app/components/common/BloggyTextField';
+import BloggyTextField from '@/app/components/shared/BloggyTextField';
 import ProfileMenu from '@/app/components/Layout/components/ProfileMenu';
 
 const HeaderBar = ({ open, handleDrawerOpen }) => {
